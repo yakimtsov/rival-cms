@@ -72,3 +72,19 @@
     color: white;
     padding: .2rem .5rem;
 }
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.page-item:not(:last-child){
+    margin-right: 0.5rem;
+}
+.page-link{
+    padding: .5rem;
+    background-color: #2A4365;
+    color: #F7FAFC;
+    border-radius: 1rem;
+    cursor: pointer;
+}

@@ -3,24 +3,29 @@ import './view.css'
 import { Link } from 'react-router-dom'
 import Navbar from '../../../components/Navbar/Navbar'
 import Sidebar from '../../../components/Sidebar/Sidebar'
-import Dots from './img/more-horizontal.svg'
+import Posts from '../../../components/Posts/Posts'
 import PostDataService from '../../../services/post.services'
+import Pagination from '../../../components/Pagination/Pagination'
 
 const View = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     getPosts();
   }, []);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(4);
 
   const getPosts = async () => {
     const data = await PostDataService.getAllPosts();
     setPosts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
-
-  // const deleteHandler = async (id) => {
-  //   await PostDataService.deleteBook(id);
-  //   getPosts();
-  // };
+    // Get current posts
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  
+    // Change page
+    const paginate = pageNumber => setCurrentPage(pageNumber);
   return (
     <div className='view'>
         <Navbar/>
@@ -34,24 +39,12 @@ const View = () => {
                   <p className="view__bar-title">Author</p>
                   <Link to='/dashboard/create'> <button className="view__button">Add new</button></Link>
                 </div>
-                <div className="view__blocks">
-                  {posts.map((doc, index) => {
-                    return(
-                      <div className="view__blocks-block">
-                      <h4 className="view__blocks-block-title">{doc.name}</h4>
-                      <p className="view__blocks-block-date">Updated 3 weeks ago</p>
-                      <div className="view__blocks-block-status">
-                        <p className="view__blocks-block-status-text">{doc.status}</p>
-                      </div>
-                      <div className="view__blocks-block-status">
-                        <h5 className="view__blocks-block-author">{doc.author}</h5>
-                        <div className="view__blocks-block-author-status">{doc.authorStatus}</div>
-                      </div>
-                      <img src={Dots} alt="" />
-                    </div>
-                  ) 
-                  })}
-                </div>
+                <Posts posts={currentPosts} />
+                <Pagination
+                  postsPerPage={postsPerPage}
+                  totalPosts={posts.length}
+                  paginate={paginate}
+                />
             </div>
         </div>
     </div>
