@@ -1,0 +1,30 @@
+.header{
+    background-color: #2D3748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.header-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.header-text span{
+    color: #63B3ED;
+}
+.header-button{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: inherit;
+    padding: .5rem ;
+    border-radius: 5px;
+}

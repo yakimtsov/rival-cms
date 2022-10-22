@@ -1,0 +1,41 @@
+.create{
+    display: flex;
+}
+.create-wrapper{
+    flex: 4;
+    
+}
+.create__block{ 
+    padding: 2rem;
+}
+.create__block-input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.create__block-input:focus{
+    outline: none;
+}
+.create__block, .create__block-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.create__button{
+    margin-left: 1.5rem;
+}
+.create__block-new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7FAFC;
+    border: 1px solid #BEE3F8;
+    padding: 10rem 5rem;
+    margin: 2rem;
+}
+.create__block-new-text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2A4365;
+    margin-left: .5rem;
+}

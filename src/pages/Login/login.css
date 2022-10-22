@@ -1,0 +1,102 @@
+.wrapper{
+    height: 100vh;
+    background-color: #E5E5E5;
+    position: relative;
+}
+.login_title{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2A4365;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login_title span{
+    color: #63B3ED;
+}
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: fit-content;
+    padding: 2rem 1rem;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translateX( 50%);
+}
+.form-container{
+    margin-bottom: 1.5rem;
+}
+.container-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.container-icon{
+    margin-right: .5rem;
+}
+.container-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2A4365;
+}
+.container-input{
+    background: #EDF2F7;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem 7rem .5rem 1rem;
+}
+.container-input:focus{
+    outline: none;
+}
+.button__container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.wrong__message{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: red;
+}
+.wrong{
+    background: #EDF2F7;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem 7rem .5rem 1rem;
+    outline: 2px solid red;
+}
+.button__container-forgot{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3182CE;
+    margin-right: 2rem;
+}
+.sign-button{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #2A4365;
+    border-radius: 5px;
+    padding: 0.5rem 1.8rem;
+    border: none;
+    cursor: pointer;
+}
+.registry-button{
+    color: #2A4365;
+    background-color: #FFFFFF;
+    border: .1rem solid #2A4365;
+    padding: 0.5rem 4.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.header-right{
+    display: flex;
+     align-items: center;
+}
+.header-right img{
+    margin-left: 2rem;
+}
+.pro-button{
+    background: #ED64A6;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFCFE;
+    padding: .6rem 1.5rem;
+    border: none;
+}
