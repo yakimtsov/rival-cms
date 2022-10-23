@@ -2,9 +2,10 @@ import React from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import Sidebar from '../../../components/Sidebar/Sidebar';
 import './files.css';
-import Search from './img/search.svg'
-import Photo from './img/photo.png'
-import Dots from '../View/img/more-horizontal.svg'
+import Search from './img/search.svg';
+import Photo from './img/photo.png';
+import Dots from '../View/img/more-horizontal.svg';
+
 const Files = () => {
   return (
     <div>

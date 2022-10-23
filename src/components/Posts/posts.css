@@ -1,0 +1,45 @@
+.view__blocks-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7FAFC;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.view__blocks-block-status{
+    display: flex;
+    align-items: center;
+}
+.view__blocks-block-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2A4365;
+}
+.view__blocks-block-date{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A4365;
+}
+.view__blocks-block-status-text{
+    background: #9AE6B4;
+    border: 2px solid #9AE6B4;
+    border-radius: 50px;
+    color: white;
+    padding: .3rem 1rem;
+}
+.view__blocks-block-author{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A4365;
+    margin-right: 0.5rem;
+}
+.view__blocks-block-author-status{
+    background: #2C5282;
+    border-radius: 50px;
+    color: white;
+    padding: .2rem .5rem;
+}

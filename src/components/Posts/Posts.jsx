@@ -1,5 +1,6 @@
-import React from 'react'
-import Dots from '../../pages/Dashboard/View/img/more-horizontal.svg'
+import React from 'react';
+import Dots from '../../pages/Dashboard/View/img/more-horizontal.svg';
+import './posts.css';
 
 const Posts = ({posts}) => {
   return (
